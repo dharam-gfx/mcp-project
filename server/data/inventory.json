@@ -1,0 +1,1602 @@
+[
+  {
+    "brand": "Toyota",
+    "model": "Camry",
+    "price": 950000,
+    "year": 2021,
+    "color": "White",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Toyota",
+    "model": "Corolla",
+    "price": 780000,
+    "year": 2020,
+    "color": "Silver",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Toyota",
+    "model": "Fortuner",
+    "price": 1800000,
+    "year": 2022,
+    "color": "Black",
+    "seats": 7,
+    "fuelType": "Diesel",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Toyota",
+    "model": "Innova",
+    "price": 1450000,
+    "year": 2021,
+    "color": "Gray",
+    "seats": 7,
+    "fuelType": "Diesel",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Honda",
+    "model": "City",
+    "price": 750000,
+    "year": 2020,
+    "color": "White",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Honda",
+    "model": "Civic",
+    "price": 950000,
+    "year": 2021,
+    "color": "Red",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Honda",
+    "model": "Amaze",
+    "price": 580000,
+    "year": 2019,
+    "color": "Silver",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Honda",
+    "model": "WR-V",
+    "price": 720000,
+    "year": 2020,
+    "color": "Blue",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Swift",
+    "price": 550000,
+    "year": 2020,
+    "color": "Red",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Baleno",
+    "price": 620000,
+    "year": 2021,
+    "color": "Blue",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Dzire",
+    "price": 580000,
+    "year": 2020,
+    "color": "White",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Ertiga",
+    "price": 890000,
+    "year": 2021,
+    "color": "Silver",
+    "seats": 7,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Hyundai",
+    "model": "i20",
+    "price": 650000,
+    "year": 2021,
+    "color": "Red",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Creta",
+    "price": 1050000,
+    "year": 2022,
+    "color": "Black",
+    "seats": 5,
+    "fuelType": "Diesel",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Verna",
+    "price": 850000,
+    "year": 2021,
+    "color": "Silver",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Venue",
+    "price": 720000,
+    "year": 2020,
+    "color": "White",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Tata",
+    "model": "Nexon",
+    "price": 750000,
+    "year": 2021,
+    "color": "Blue",
+    "seats": 5,
+    "fuelType": "Diesel",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Tata",
+    "model": "Harrier",
+    "price": 1350000,
+    "year": 2022,
+    "color": "Gray",
+    "seats": 5,
+    "fuelType": "Diesel",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Tata",
+    "model": "Tiago",
+    "price": 480000,
+    "year": 2020,
+    "color": "Red",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Tata",
+    "model": "Safari",
+    "price": 1550000,
+    "year": 2022,
+    "color": "White",
+    "seats": 7,
+    "fuelType": "Diesel",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Mahindra",
+    "model": "XUV700",
+    "price": 1450000,
+    "year": 2022,
+    "color": "Black",
+    "seats": 7,
+    "fuelType": "Diesel",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Mahindra",
+    "model": "Scorpio",
+    "price": 1050000,
+    "year": 2021,
+    "color": "White",
+    "seats": 7,
+    "fuelType": "Diesel",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Mahindra",
+    "model": "Thar",
+    "price": 1250000,
+    "year": 2022,
+    "color": "Red",
+    "seats": 4,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Mahindra",
+    "model": "XUV300",
+    "price": 780000,
+    "year": 2020,
+    "color": "Blue",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Kia",
+    "model": "Seltos",
+    "price": 1050000,
+    "year": 2021,
+    "color": "White",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Kia",
+    "model": "Sonet",
+    "price": 780000,
+    "year": 2020,
+    "color": "Black",
+    "seats": 5,
+    "fuelType": "Diesel",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Kia",
+    "model": "Carnival",
+    "price": 1950000,
+    "year": 2022,
+    "color": "Silver",
+    "seats": 7,
+    "fuelType": "Diesel",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Renault",
+    "model": "Kwid",
+    "price": 380000,
+    "year": 2020,
+    "color": "Red",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Renault",
+    "model": "Triber",
+    "price": 580000,
+    "year": 2021,
+    "color": "White",
+    "seats": 7,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Renault",
+    "model": "Kiger",
+    "price": 650000,
+    "year": 2021,
+    "color": "Blue",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Nissan",
+    "model": "Magnite",
+    "price": 670000,
+    "year": 2021,
+    "color": "Red",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Nissan",
+    "model": "Kicks",
+    "price": 850000,
+    "year": 2020,
+    "color": "Orange",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Volkswagen",
+    "model": "Polo",
+    "price": 650000,
+    "year": 2020,
+    "color": "White",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Volkswagen",
+    "model": "Vento",
+    "price": 780000,
+    "year": 2020,
+    "color": "Silver",
+    "seats": 5,
+    "fuelType": "Diesel",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Volkswagen",
+    "model": "Taigun",
+    "price": 1050000,
+    "year": 2022,
+    "color": "Blue",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Skoda",
+    "model": "Rapid",
+    "price": 750000,
+    "year": 2020,
+    "color": "White",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Skoda",
+    "model": "Kushaq",
+    "price": 1050000,
+    "year": 2022,
+    "color": "Red",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Skoda",
+    "model": "Superb",
+    "price": 1850000,
+    "year": 2021,
+    "color": "Black",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Ford",
+    "model": "EcoSport",
+    "price": 780000,
+    "year": 2020,
+    "color": "Blue",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Ford",
+    "model": "Endeavour",
+    "price": 1650000,
+    "year": 2021,
+    "color": "White",
+    "seats": 7,
+    "fuelType": "Diesel",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "MG",
+    "model": "Hector",
+    "price": 1350000,
+    "year": 2021,
+    "color": "Red",
+    "seats": 5,
+    "fuelType": "Diesel",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "MG",
+    "model": "Astor",
+    "price": 950000,
+    "year": 2022,
+    "color": "White",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Jeep",
+    "model": "Compass",
+    "price": 1550000,
+    "year": 2021,
+    "color": "Black",
+    "seats": 5,
+    "fuelType": "Diesel",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "BMW",
+    "model": "X1",
+    "price": 2950000,
+    "year": 2022,
+    "color": "White",
+    "seats": 5,
+    "fuelType": "Diesel",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "BMW",
+    "model": "3 Series",
+    "price": 3250000,
+    "year": 2021,
+    "color": "Black",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "model": "C-Class",
+    "price": 3550000,
+    "year": 2022,
+    "color": "Silver",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "model": "GLA",
+    "price": 3150000,
+    "year": 2021,
+    "color": "White",
+    "seats": 5,
+    "fuelType": "Diesel",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Audi",
+    "model": "A4",
+    "price": 3350000,
+    "year": 2022,
+    "color": "Black",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Toyota",
+    "model": "Glanza",
+    "price": 650000,
+    "year": 2020,
+    "color": "Blue",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Alto",
+    "price": 350000,
+    "year": 2020,
+    "color": "White",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "WagonR",
+    "price": 450000,
+    "year": 2020,
+    "color": "Silver",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "S-Presso",
+    "price": 420000,
+    "year": 2020,
+    "color": "Orange",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Celerio",
+    "price": 480000,
+    "year": 2020,
+    "color": "Blue",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Ignis",
+    "price": 520000,
+    "year": 2021,
+    "color": "Red",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Vitara Brezza",
+    "price": 780000,
+    "year": 2021,
+    "color": "Green",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Ciaz",
+    "price": 820000,
+    "year": 2020,
+    "color": "Silver",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "XL6",
+    "price": 950000,
+    "year": 2021,
+    "color": "Blue",
+    "seats": 6,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Santro",
+    "price": 420000,
+    "year": 2019,
+    "color": "White",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Grand i10",
+    "price": 520000,
+    "year": 2020,
+    "color": "Red",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Aura",
+    "price": 580000,
+    "year": 2021,
+    "color": "Silver",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Alcazar",
+    "price": 1450000,
+    "year": 2022,
+    "color": "White",
+    "seats": 7,
+    "fuelType": "Diesel",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Tucson",
+    "price": 1950000,
+    "year": 2022,
+    "color": "Black",
+    "seats": 5,
+    "fuelType": "Diesel",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Kia",
+    "model": "Carens",
+    "price": 1150000,
+    "year": 2022,
+    "color": "White",
+    "seats": 7,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Tata",
+    "model": "Altroz",
+    "price": 650000,
+    "year": 2021,
+    "color": "Blue",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Tata",
+    "model": "Tigor",
+    "price": 580000,
+    "year": 2021,
+    "color": "White",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Tata",
+    "model": "Punch",
+    "price": 620000,
+    "year": 2022,
+    "color": "Orange",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Tata",
+    "model": "Nexon EV",
+    "price": 1350000,
+    "year": 2022,
+    "color": "Blue",
+    "seats": 5,
+    "fuelType": "Electric",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Tata",
+    "model": "Tigor EV",
+    "price": 1050000,
+    "year": 2022,
+    "color": "White",
+    "seats": 5,
+    "fuelType": "Electric",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "MG",
+    "model": "ZS EV",
+    "price": 1950000,
+    "year": 2022,
+    "color": "White",
+    "seats": 5,
+    "fuelType": "Electric",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Honda",
+    "model": "Jazz",
+    "price": 720000,
+    "year": 2020,
+    "color": "Red",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Kona Electric",
+    "price": 1850000,
+    "year": 2022,
+    "color": "Green",
+    "seats": 5,
+    "fuelType": "Electric",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Mahindra",
+    "model": "KUV100",
+    "price": 520000,
+    "year": 2020,
+    "color": "Red",
+    "seats": 6,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Mahindra",
+    "model": "Bolero",
+    "price": 850000,
+    "year": 2021,
+    "color": "White",
+    "seats": 7,
+    "fuelType": "Diesel",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Mahindra",
+    "model": "Marazzo",
+    "price": 950000,
+    "year": 2020,
+    "color": "Silver",
+    "seats": 7,
+    "fuelType": "Diesel",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Honda",
+    "model": "BR-V",
+    "price": 850000,
+    "year": 2019,
+    "color": "White",
+    "seats": 7,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Renault",
+    "model": "Duster",
+    "price": 850000,
+    "year": 2019,
+    "color": "Brown",
+    "seats": 5,
+    "fuelType": "Diesel",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Ford",
+    "model": "Figo",
+    "price": 550000,
+    "year": 2019,
+    "color": "Blue",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Ford",
+    "model": "Aspire",
+    "price": 580000,
+    "year": 2019,
+    "color": "White",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Toyota",
+    "model": "Etios",
+    "price": 620000,
+    "year": 2019,
+    "color": "Silver",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Toyota",
+    "model": "Urban Cruiser",
+    "price": 850000,
+    "year": 2021,
+    "color": "Brown",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Citroen",
+    "model": "C5 Aircross",
+    "price": 1850000,
+    "year": 2022,
+    "color": "White",
+    "seats": 5,
+    "fuelType": "Diesel",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Citroen",
+    "model": "C3",
+    "price": 650000,
+    "year": 2022,
+    "color": "Orange",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Skoda",
+    "model": "Slavia",
+    "price": 980000,
+    "year": 2022,
+    "color": "Red",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Volkswagen",
+    "model": "Virtus",
+    "price": 990000,
+    "year": 2022,
+    "color": "Blue",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Toyota",
+    "model": "Vellfire",
+    "price": 4500000,
+    "year": 2022,
+    "color": "White",
+    "seats": 7,
+    "fuelType": "Hybrid",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Toyota",
+    "model": "Camry Hybrid",
+    "price": 2800000,
+    "year": 2022,
+    "color": "Black",
+    "seats": 5,
+    "fuelType": "Hybrid",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Honda",
+    "model": "Accord",
+    "price": 2600000,
+    "year": 2021,
+    "color": "Silver",
+    "seats": 5,
+    "fuelType": "Hybrid",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Lexus",
+    "model": "ES",
+    "price": 3900000,
+    "year": 2022,
+    "color": "White",
+    "seats": 5,
+    "fuelType": "Hybrid",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Lexus",
+    "model": "NX",
+    "price": 4200000,
+    "year": 2022,
+    "color": "Black",
+    "seats": 5,
+    "fuelType": "Hybrid",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Volvo",
+    "model": "XC40",
+    "price": 2900000,
+    "year": 2022,
+    "color": "White",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Volvo",
+    "model": "XC60",
+    "price": 4200000,
+    "year": 2022,
+    "color": "Blue",
+    "seats": 5,
+    "fuelType": "Diesel",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Volvo",
+    "model": "S90",
+    "price": 3800000,
+    "year": 2022,
+    "color": "Black",
+    "seats": 5,
+    "fuelType": "Diesel",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Jeep",
+    "model": "Wrangler",
+    "price": 5500000,
+    "year": 2022,
+    "color": "Green",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Jaguar",
+    "model": "XE",
+    "price": 3600000,
+    "year": 2021,
+    "color": "Red",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Jaguar",
+    "model": "F-Pace",
+    "price": 5200000,
+    "year": 2022,
+    "color": "Black",
+    "seats": 5,
+    "fuelType": "Diesel",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Land Rover",
+    "model": "Discovery Sport",
+    "price": 4900000,
+    "year": 2022,
+    "color": "White",
+    "seats": 7,
+    "fuelType": "Diesel",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Land Rover",
+    "model": "Range Rover Evoque",
+    "price": 5500000,
+    "year": 2022,
+    "color": "Silver",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "model": "E-Class",
+    "price": 4800000,
+    "year": 2022,
+    "color": "Black",
+    "seats": 5,
+    "fuelType": "Diesel",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "model": "GLC",
+    "price": 4500000,
+    "year": 2022,
+    "color": "White",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "BMW",
+    "model": "5 Series",
+    "price": 4700000,
+    "year": 2022,
+    "color": "Silver",
+    "seats": 5,
+    "fuelType": "Diesel",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "BMW",
+    "model": "X3",
+    "price": 4200000,
+    "year": 2022,
+    "color": "Blue",
+    "seats": 5,
+    "fuelType": "Diesel",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Audi",
+    "model": "Q3",
+    "price": 3800000,
+    "year": 2022,
+    "color": "White",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Audi",
+    "model": "Q5",
+    "price": 4500000,
+    "year": 2022,
+    "color": "Black",
+    "seats": 5,
+    "fuelType": "Diesel",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "MINI",
+    "model": "Cooper",
+    "price": 3200000,
+    "year": 2022,
+    "color": "Red",
+    "seats": 4,
+    "fuelType": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "MINI",
+    "model": "Countryman",
+    "price": 3800000,
+    "year": 2022,
+    "color": "Green",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Porsche",
+    "model": "Macan",
+    "price": 7500000,
+    "year": 2022,
+    "color": "White",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Porsche",
+    "model": "Cayenne",
+    "price": 9800000,
+    "year": 2022,
+    "color": "Black",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Eeco",
+    "price": 420000,
+    "year": 2020,
+    "color": "White",
+    "seats": 7,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Omni",
+    "price": 280000,
+    "year": 2019,
+    "color": "White",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Swift Dzire Tour",
+    "price": 520000,
+    "year": 2020,
+    "color": "White",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Xcent Prime",
+    "price": 550000,
+    "year": 2020,
+    "color": "White",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Tata",
+    "model": "Ace",
+    "price": 420000,
+    "year": 2021,
+    "color": "White",
+    "seats": 2,
+    "fuelType": "Diesel",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Mahindra",
+    "model": "Supro",
+    "price": 480000,
+    "year": 2021,
+    "color": "White",
+    "seats": 8,
+    "fuelType": "Diesel",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Tata",
+    "model": "Venture",
+    "price": 450000,
+    "year": 2019,
+    "color": "White",
+    "seats": 7,
+    "fuelType": "Diesel",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Mahindra",
+    "model": "Xylo",
+    "price": 750000,
+    "year": 2020,
+    "color": "White",
+    "seats": 8,
+    "fuelType": "Diesel",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Force",
+    "model": "Traveller",
+    "price": 1350000,
+    "year": 2021,
+    "color": "White",
+    "seats": 12,
+    "fuelType": "Diesel",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Force",
+    "model": "Cruiser",
+    "price": 950000,
+    "year": 2020,
+    "color": "White",
+    "seats": 9,
+    "fuelType": "Diesel",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Isuzu",
+    "model": "D-Max",
+    "price": 950000,
+    "year": 2021,
+    "color": "White",
+    "seats": 2,
+    "fuelType": "Diesel",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Isuzu",
+    "model": "V-Cross",
+    "price": 1650000,
+    "year": 2022,
+    "color": "Silver",
+    "seats": 5,
+    "fuelType": "Diesel",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Mahindra",
+    "model": "Pik-Up",
+    "price": 780000,
+    "year": 2021,
+    "color": "White",
+    "seats": 2,
+    "fuelType": "Diesel",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Tata",
+    "model": "Yodha",
+    "price": 750000,
+    "year": 2021,
+    "color": "White",
+    "seats": 2,
+    "fuelType": "Diesel",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Toyota",
+    "model": "Hilux",
+    "price": 1850000,
+    "year": 2022,
+    "color": "White",
+    "seats": 5,
+    "fuelType": "Diesel",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "BYD",
+    "model": "e6",
+    "price": 1950000,
+    "year": 2022,
+    "color": "White",
+    "seats": 5,
+    "fuelType": "Electric",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "model": "EQC",
+    "price": 7500000,
+    "year": 2022,
+    "color": "White",
+    "seats": 5,
+    "fuelType": "Electric",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Audi",
+    "model": "e-tron",
+    "price": 9950000,
+    "year": 2022,
+    "color": "Gray",
+    "seats": 5,
+    "fuelType": "Electric",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Porsche",
+    "model": "Taycan",
+    "price": 15000000,
+    "year": 2022,
+    "color": "Blue",
+    "seats": 4,
+    "fuelType": "Electric",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Jaguar",
+    "model": "I-Pace",
+    "price": 10500000,
+    "year": 2022,
+    "color": "White",
+    "seats": 5,
+    "fuelType": "Electric",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Tesla",
+    "model": "Model 3",
+    "price": 6000000,
+    "year": 2022,
+    "color": "Red",
+    "seats": 5,
+    "fuelType": "Electric",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Tesla",
+    "model": "Model Y",
+    "price": 7000000,
+    "year": 2022,
+    "color": "White",
+    "seats": 5,
+    "fuelType": "Electric",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Jeep",
+    "model": "Grand Cherokee",
+    "price": 6500000,
+    "year": 2022,
+    "color": "Black",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "model": "GLE",
+    "price": 7800000,
+    "year": 2022,
+    "color": "Silver",
+    "seats": 5,
+    "fuelType": "Diesel",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "BMW",
+    "model": "X5",
+    "price": 7900000,
+    "year": 2022,
+    "color": "Blue",
+    "seats": 5,
+    "fuelType": "Diesel",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Audi",
+    "model": "Q7",
+    "price": 8200000,
+    "year": 2022,
+    "color": "White",
+    "seats": 7,
+    "fuelType": "Diesel",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Land Rover",
+    "model": "Range Rover Sport",
+    "price": 12000000,
+    "year": 2022,
+    "color": "Black",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Rolls-Royce",
+    "model": "Ghost",
+    "price": 65000000,
+    "year": 2022,
+    "color": "White",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Bentley",
+    "model": "Continental GT",
+    "price": 35000000,
+    "year": 2022,
+    "color": "Black",
+    "seats": 4,
+    "fuelType": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Maserati",
+    "model": "Ghibli",
+    "price": 12500000,
+    "year": 2022,
+    "color": "Blue",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Lamborghini",
+    "model": "Urus",
+    "price": 32000000,
+    "year": 2022,
+    "color": "Yellow",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Ferrari",
+    "model": "Roma",
+    "price": 38000000,
+    "year": 2022,
+    "color": "Red",
+    "seats": 2,
+    "fuelType": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "McLaren",
+    "model": "GT",
+    "price": 35000000,
+    "year": 2022,
+    "color": "Orange",
+    "seats": 2,
+    "fuelType": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Aston Martin",
+    "model": "Vantage",
+    "price": 30000000,
+    "year": 2022,
+    "color": "Green",
+    "seats": 2,
+    "fuelType": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Bugatti",
+    "model": "Chiron",
+    "price": 250000000,
+    "year": 2022,
+    "color": "Blue",
+    "seats": 2,
+    "fuelType": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Koenigsegg",
+    "model": "Gemera",
+    "price": 320000000,
+    "year": 2022,
+    "color": "Silver",
+    "seats": 4,
+    "fuelType": "Hybrid",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Pagani",
+    "model": "Huayra",
+    "price": 280000000,
+    "year": 2022,
+    "color": "White",
+    "seats": 2,
+    "fuelType": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Rimac",
+    "model": "Nevera",
+    "price": 220000000,
+    "year": 2022,
+    "color": "Blue",
+    "seats": 2,
+    "fuelType": "Electric",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Lucid",
+    "model": "Air",
+    "price": 12000000,
+    "year": 2022,
+    "color": "Silver",
+    "seats": 5,
+    "fuelType": "Electric",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Lotus",
+    "model": "Evija",
+    "price": 180000000,
+    "year": 2022,
+    "color": "Yellow",
+    "seats": 2,
+    "fuelType": "Electric",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Pininfarina",
+    "model": "Battista",
+    "price": 210000000,
+    "year": 2022,
+    "color": "Blue",
+    "seats": 2,
+    "fuelType": "Electric",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Rivian",
+    "model": "R1T",
+    "price": 8500000,
+    "year": 2022,
+    "color": "Green",
+    "seats": 5,
+    "fuelType": "Electric",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Maruti Suzuki",
+    "model": "Alto 800",
+    "price": 320000,
+    "year": 2020,
+    "color": "White",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Manual"
+  },
+  {
+    "brand": "Honda",
+    "model": "CR-V",
+    "price": 2100000,
+    "year": 2021,
+    "color": "Silver",
+    "seats": 7,
+    "fuelType": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Audi",
+    "model": "A6",
+    "price": 5500000,
+    "year": 2022,
+    "color": "Black",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "BMW",
+    "model": "7 Series",
+    "price": 12000000,
+    "year": 2022,
+    "color": "White",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "model": "S-Class",
+    "price": 16000000,
+    "year": 2022,
+    "color": "Black",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Volvo",
+    "model": "XC90",
+    "price": 8500000,
+    "year": 2022,
+    "color": "Silver",
+    "seats": 7,
+    "fuelType": "Hybrid",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Lexus",
+    "model": "LX",
+    "price": 15000000,
+    "year": 2022,
+    "color": "White",
+    "seats": 7,
+    "fuelType": "Diesel",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Toyota",
+    "model": "Land Cruiser",
+    "price": 14000000,
+    "year": 2022,
+    "color": "Black",
+    "seats": 7,
+    "fuelType": "Diesel",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Jaguar",
+    "model": "F-Type",
+    "price": 13000000,
+    "year": 2022,
+    "color": "Red",
+    "seats": 2,
+    "fuelType": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Land Rover",
+    "model": "Range Rover",
+    "price": 22000000,
+    "year": 2022,
+    "color": "White",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Automatic"
+  },
+  {
+    "brand": "Bentley",
+    "model": "Bentayga",
+    "price": 42000000,
+    "year": 2022,
+    "color": "Green",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Automatic"
+  }
+]
