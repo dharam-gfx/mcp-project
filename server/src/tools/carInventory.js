@@ -29,7 +29,7 @@ let conversationalContext = {
 };
 
 /**
- * Normalize price input - handles various formats like "6,70,000", "670000", etc.
+ * Normalize price input - handles various formats like "6,70,000", "670000", "80 lakh", etc.
  * @param {string|number} price - Price in various formats
  * @returns {number|undefined} - Normalized price as number or undefined if invalid
  */
@@ -41,8 +41,24 @@ const normalizePrice = (price) => {
     
     // If string, try to convert it
     if (typeof price === 'string') {
+        const input = price.toLowerCase();
+        
+        // Handle lakh and crore
+        if (input.includes('lakh') || input.includes('lac')) {
+            const number = parseFloat(input.replace(/[^\d.]/g, ''));
+            if (!isNaN(number)) {
+                return number * 100000; // Convert to actual value (1 lakh = 100,000)
+            }
+        }
+        if (input.includes('crore') || input.includes('cr')) {
+            const number = parseFloat(input.replace(/[^\d.]/g, ''));
+            if (!isNaN(number)) {
+                return number * 10000000; // Convert to actual value (1 crore = 10,000,000)
+            }
+        }
+        
         // Remove currency symbols, commas and spaces
-        const cleanPrice = price.replace(/[₹,\s]/g, '');
+        const cleanPrice = input.replace(/[₹,\s]/g, '');
         const parsedPrice = parseFloat(cleanPrice);
         
         if (!isNaN(parsedPrice)) {
@@ -167,19 +183,71 @@ const compareCarsSideBySide = (cars) => {
  */
 const getCarsForComparison = async (models) => {
     try {
+        // Process each model string to extract year, brand, and model
+        const processModelString = (modelStr) => {
+            const match = modelStr.match(/(?:(\d{4})\s+)?([A-Za-z-]+)\s+([A-Za-z0-9-]+.*)/);
+            if (match) {
+                return {
+                    year: match[1] || null,
+                    brand: match[2],
+                    model: match[3]
+                };
+            }
+            return null;
+        };
+
         // Make individual requests for each model
-        const carPromises = models.map(model => 
-            fetch(`${BASE_URL}/filter?model=${encodeURIComponent(model)}&limit=1`)
+        const carPromises = models.map(modelStr => {
+            const parsed = processModelString(modelStr);
+            if (!parsed) return Promise.resolve(null);
+
+            let url = `${BASE_URL}/filter?`;
+            const params = [];
+            
+            if (parsed.brand) params.push(`brand=${encodeURIComponent(parsed.brand)}`);
+            if (parsed.model) params.push(`model=${encodeURIComponent(parsed.model)}`);
+            if (parsed.year) params.push(`year=${parsed.year}`);
+            params.push('limit=1');
+            
+            url += params.join('&');
+            
+            return fetch(url)
                 .then(response => {
-                    if (!response.ok) throw new Error(`API request failed for ${model}`);
+                    if (!response.ok) throw new Error(`API request failed for ${modelStr}`);
                     return response.json();
                 })
-                .then(data => data.results && data.results.length > 0 ? data.results[0] : null)
-        );
+                .then(data => data.results && data.results.length > 0 ? data.results[0] : null);
+        });
         
         // Wait for all requests to complete
         const cars = await Promise.all(carPromises);
-        return cars.filter(car => car !== null); // Filter out any null results
+        const filteredCars = cars.filter(car => car !== null);
+        
+        // If we couldn't find exact matches, try without year constraints
+        if (filteredCars.length < 2) {
+            const carPromisesNoYear = models.map(modelStr => {
+                const parsed = processModelString(modelStr);
+                if (!parsed) return Promise.resolve(null);
+
+                let url = `${BASE_URL}/filter?`;
+                const params = [];
+                
+                if (parsed.brand) params.push(`brand=${encodeURIComponent(parsed.brand)}`);
+                if (parsed.model) params.push(`model=${encodeURIComponent(parsed.model)}`);
+                params.push('limit=1');
+                
+                url += params.join('&');
+                
+                return fetch(url)
+                    .then(response => response.json())
+                    .then(data => data.results && data.results.length > 0 ? data.results[0] : null);
+            });
+            
+            const carsNoYear = await Promise.all(carPromisesNoYear);
+            return carsNoYear.filter(car => car !== null);
+        }
+        
+        return filteredCars;
     } catch (error) {
         console.error("Error fetching cars for comparison:", error);
         throw error;
@@ -219,24 +287,21 @@ const processNaturalLanguageQuery = (query) => {
             params.notBrand = conversationalContext.lastBrand;
         }
     }
-    
-    // Extract price constraints
+      // Extract price constraints
     if (queryLower.includes('under')) {
-        const underMatch = queryLower.match(/under\s+([₹]?[0-9,.]+)/i);
+        const underMatch = queryLower.match(/under\s+([₹]?[0-9,.]+(?:\s*(?:lakh|lac|cr|crore))?)/i);
         if (underMatch) {
             params.maxPrice = underMatch[1];
         }
     }
-    
-    if (queryLower.includes('above') || queryLower.includes('over')) {
-        const overMatch = queryLower.match(/(above|over)\s+([₹]?[0-9,.]+)/i);
+      if (queryLower.includes('above') || queryLower.includes('over')) {
+        const overMatch = queryLower.match(/(above|over)\s+([₹]?[0-9,.]+(?:\s*(?:lakh|lac|cr|crore))?)/i);
         if (overMatch) {
             params.minPrice = overMatch[2];
         }
     }
-    
-    if (queryLower.includes('between')) {
-        const betweenMatch = queryLower.match(/between\s+([₹]?[0-9,.]+)\s+and\s+([₹]?[0-9,.]+)/i);
+      if (queryLower.includes('between')) {
+        const betweenMatch = queryLower.match(/between\s+([₹]?[0-9,.]+(?:\s*(?:lakh|lac|cr|crore))?)\s+and\s+([₹]?[0-9,.]+(?:\s*(?:lakh|lac|cr|crore))?)/i);
         if (betweenMatch) {
             params.minPrice = betweenMatch[1];
             params.maxPrice = betweenMatch[2];
@@ -364,7 +429,7 @@ const calculatePriceStats = (cars) => {
 
 export const carInventoryTool = [
     "carInventory",
-    "Search our vehicle inventory by specific attributes: brand (Toyota, Honda, etc.), model (Camry, Civic), price range (in ₹), color (red, blue, white), fuel type (petrol, diesel, electric), or transmission (automatic, manual). Examples of queries: 'show 5 red Honda cars', 'cars under ₹10,00,000', 'compare Toyota Camry and Honda Civic', 'next 10 cars', 'all blue Toyota models', or 'search for family cars'. All prices are in Indian Rupees (₹). For large results, only a limited number will be shown - ask for 'next' or 'more' to see additional cars.",
+    "Search our vehicle inventory by specific attributes: brand or make (Toyota, Honda, etc.), model (Camry, Civic), price range (in ₹), color (red, blue, white), fuel type (petrol, diesel, electric), or transmission (automatic, manual). Examples of queries: 'show 5 red Honda cars', 'cars under ₹10,00,000', 'compare Toyota Camry and Honda Civic', 'next 10 cars', 'all blue Toyota models', or 'search for family cars'. All prices are in Indian Rupees (₹). For large results, only a limited number will be shown - ask for 'next' or 'more' to see additional cars.",
     {
         brand: z.string().optional().describe("Car brand name like Toyota, Honda, Maruti Suzuki, Hyundai, Tata, Mahindra, etc."),
         model: z.string().optional().describe("Car model like Camry, Civic, Swift, i20, Tiago, Thar, etc."),
