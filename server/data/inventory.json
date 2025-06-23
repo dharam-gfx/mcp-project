@@ -449,6 +449,16 @@
     "fuelType": "Petrol",
     "transmission": "Automatic"
   },
+    {
+    "brand": "BMW",
+    "model": "3 Series 1",
+    "price": 6000000,
+    "year": 2021,
+    "color": "Black",
+    "seats": 5,
+    "fuelType": "Petrol",
+    "transmission": "Automatic"
+  },
   {
     "brand": "Mercedes-Benz",
     "model": "C-Class",
