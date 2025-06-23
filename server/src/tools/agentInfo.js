@@ -19,21 +19,23 @@ const getFullInfoResponse = (info) => ({
   content: [
     {
       type: "text",
-      text: `👋 Hello! I am ${info.name}!\n\n` +
-        `🔹 Created by: ${info.creator}\n` +
-        `🔹 Creator's Role: ${info.creatorRole}\n` +
-        `🔹 Expertise: ${info.expertise}\n` +
-        `🔹 Based in: ${info.location}\n\n` +
-        `💫 About Me:\n${info.description}\n${info.purpose}\n\n` +
-        `🚗 Vehicle Search Features:\n` +
-        `• Search cars by brand or make, model, price range, and color\n` +
-        `• Filter by fuel type (petrol, diesel, electric) and transmission\n` +
-        `• Compare different car models side by side\n` +
-        `• Find vehicles within specific price ranges\n` +
-        `• Get detailed specifications and features\n` +
-        `• Sort results by price or year\n` +
-        `• Navigate through multiple car listings\n\n` +
-        `🤝 My Approach:\n${info.personality}`
+      text:
+        `Hello! I'm **${info.name}** – your dedicated automotive information specialist.\n\n` +
+        `**Created by:** ${info.creator} (${info.creatorRole})\n` +
+        `**Expertise:** ${info.expertise}\n` +
+        `**Location:** ${info.location}\n\n` +
+        `---\n` +
+        `### About Me\n${info.description}\n${info.purpose}\n\n` +
+        `### 🚗 What I Can Help You With\n` +
+        `- Search cars by brand, model, price, color, fuel type, and transmission\n` +
+        `- Compare different car models side by side\n` +
+        `- Find vehicles within specific price ranges\n` +
+        `- Get detailed specifications and features\n` +
+        `- Sort results by price or year\n` +
+        `- Navigate through multiple car listings\n\n` +
+        `**Personality:** ${info.personality}\n\n` +
+        `---\n` +
+        `*I'm here to make your car search easy and enjoyable. Just ask me anything about cars!*`
     }
   ]
 });

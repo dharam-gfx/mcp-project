@@ -691,6 +691,24 @@ Consider:
             }
             
             // Format results
+            if (cars && cars.length > 0) {
+                // Build Gemini-style response
+                let intro = `Here are some of the lowest-priced ${filterParams.brand ? filterParams.brand.toUpperCase() + ' ' : ''}models available${filterParams.color ? ' in ' + filterParams.color : ''}${filterParams.fuelType ? ' (' + filterParams.fuelType + ')' : ''} in India, along with their key details:`;
+                let tableHeader = `| Model | Color | Price (₹) | Fuel Type | Transmission | Seats |\n|-------|-------|-----------|-----------|--------------|-------|`;
+                let tableRows = cars.map(car => `| ${car.year} ${car.brand} ${car.model} | ${car.color} | ${car.price.toLocaleString()} | ${car.fuelType} | ${car.transmission} | ${car.seats} |`).join("\n");
+                let note = `\n\n**Note:** Prices are approximate and may vary based on location, dealer, and options. For the most up-to-date pricing and availability, please check with your local dealer.`;
+                let resultText = `${intro}\n\n${tableHeader}\n${tableRows}${note}`;
+                return {
+                    content: [
+                        {
+                            type: "text",
+                            text: resultText
+                        }
+                    ]
+                };
+            }
+            
+            // Format results
             const carInfoList = cars.map(formatCarInfo);
             const displayedCars = cars.length;
             

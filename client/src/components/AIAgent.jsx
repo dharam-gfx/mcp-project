@@ -1,53 +1,55 @@
 import { useState, useRef, useEffect } from 'react';
 import { handleChat } from '../services/mcpClient';
-
+import ReactMarkdown from 'react-markdown'; // Import ReactMarkdown
+import remarkGfm from 'remark-gfm'; // Import remarkGfm for tables and other features
 
 const AIAgent = () => {
-    const [input, setInput] = useState('');
-    const [messages, setMessages] = useState([]);
-    const [isLoading, setIsLoading] = useState(false);
-    const messagesEndRef = useRef(null);
-    
+    const [input, setInput] = useState( '' );
+    const [messages, setMessages] = useState( [] );
+    const [isLoading, setIsLoading] = useState( false );
+    const messagesEndRef = useRef( null );
+
     // Auto-scroll to bottom when new messages appear
-    useEffect(() => {
-        messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
-    }, [messages]);
+    useEffect( () => {
+        messagesEndRef.current?.scrollIntoView( { behavior: 'smooth' } );
+    }, [messages] );
 
     const handleClearChat = () => {
-        setMessages([]);
+        setMessages( [] );
     };
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = async ( e ) => {
         e.preventDefault();
-        if (!input.trim()) return;
+        if ( !input.trim() ) return;
 
         // Add user message to chat
         const userMessage = { role: 'user', content: input };
-        setMessages([...messages, userMessage]);
-        
+        setMessages( [...messages, userMessage] );
+
         // Clear input early for better UX
         const currentInput = input;
-        setInput('');
-        
+        setInput( '' );
+
         // Set loading state
-        setIsLoading(true);
-        
+        setIsLoading( true );
+
         try {
-            const aiResponse = await handleChat(currentInput);
+            const aiResponse = await handleChat( currentInput );
 
             // Add AI response to chat
-            setMessages(prevMessages => [...prevMessages, {
+            setMessages( prevMessages => [...prevMessages, {
                 role: 'assistant',
-                content: aiResponse
-            }]);
-        } catch (error) {
-            console.error('Error:', error);
-            setMessages(prevMessages => [...prevMessages, {
+                // Ensure aiResponse is a string, as react-markdown expects a string
+                content: typeof aiResponse === 'string' ? aiResponse : JSON.stringify( aiResponse, null, 2 )
+            }] );
+        } catch ( error ) {
+            console.error( 'Error:', error );
+            setMessages( prevMessages => [...prevMessages, {
                 role: 'assistant',
                 content: 'I apologize, but I encountered an error while processing your request.'
-            }]);
+            }] );
         } finally {
-            setIsLoading(false);
+            setIsLoading( false );
         }
     };
 
@@ -62,7 +64,7 @@ const AIAgent = () => {
                         </svg>
                         AI Agent Chat
                     </h1>
-                    <button 
+                    <button
                         onClick={handleClearChat}
                         className="p-2 rounded-full hover:bg-gray-100 text-gray-500 transition-colors duration-200"
                         title="Clear conversation"
@@ -72,7 +74,7 @@ const AIAgent = () => {
                         </svg>
                     </button>
                 </div>
-                
+
                 {/* Messages area */}
                 <div className="flex-grow overflow-auto px-4 sm:px-6 py-4 bg-gradient-to-b from-gray-50 to-white">
                     {messages.length === 0 ? (
@@ -87,11 +89,12 @@ const AIAgent = () => {
                         </div>
                     ) : (
                         <div className="space-y-4">
-                            {messages.map((message, index) => (
-                                <div 
-                                    key={index} 
+                            {messages.map( ( message, index ) => (
+                                <div
+                                    key={index}
                                     className={`flex ${message.role === 'user' ? 'justify-end' : 'justify-start'} animate-fadeIn`}
                                 >
+                                    {/* AI Avatar */}
                                     {message.role !== 'user' && (
                                         <div className="w-8 h-8 rounded-full bg-gradient-to-r from-blue-600 to-blue-500 flex items-center justify-center text-white mr-2 flex-shrink-0 shadow-sm">
                                             <svg className="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -100,14 +103,66 @@ const AIAgent = () => {
                                         </div>
                                     )}
                                     <div
-                                        className={`p-3 rounded-2xl max-w-[85%] sm:max-w-[75%] shadow-sm text-gray-800 ${
-                                            message.role === 'user'
-                                                ? 'bg-gradient-to-r from-blue-600 to-blue-500 text-white rounded-br-none'
-                                                : 'bg-white rounded-bl-none border border-gray-100'
-                                        }`}
+                                        className={`p-3 rounded-2xl max-w-[85%] sm:max-w-[75%] shadow-sm ${message.role === 'user'
+                                            ? 'bg-gradient-to-r from-blue-600 to-blue-500 text-white rounded-br-none'
+                                            : 'bg-white rounded-bl-none border border-gray-100 text-gray-800'
+                                            }`}
                                     >
-                                        <p className="whitespace-pre-wrap break-words text-sm sm:text-base">{message.content}</p>
+                                        {/* Use ReactMarkdown here */}                                        <ReactMarkdown
+                                            remarkPlugins={[remarkGfm]}
+                                            components={{
+                                                table: ( props ) => (
+                                                    <div className="overflow-x-auto my-4">
+                                                        <table className="min-w-full divide-y divide-gray-200" {...props} />
+                                                    </div>
+                                                ),
+                                                thead: ( props ) => (
+                                                    <thead className="bg-gray-50" {...props} />
+                                                ),
+                                                th: ( props ) => (
+                                                    <th className="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider" {...props} />
+                                                ),
+                                                td: ( props ) => (
+                                                    <td className="px-3 py-2 whitespace-nowrap text-sm text-gray-900 border-t border-gray-200" {...props} />
+                                                ),
+                                                strong: ( props ) => (
+                                                    <strong className="font-semibold" {...props} />
+                                                ),
+                                                a: ( props ) => (
+                                                    <a className="text-blue-600 hover:underline" {...props} />
+                                                ),
+                                                ul: ( props ) => (
+                                                    <ul className="list-disc ml-4 space-y-2 my-4" {...props} />
+                                                ),
+                                                ol: ( props ) => (
+                                                    <ol className="list-decimal ml-4 space-y-2 my-4" {...props} />
+                                                ),
+                                                p: ( props ) => (
+                                                    <p className="mb-4 last:mb-0" {...props} />
+                                                ),
+                                                code: ( { inline, className, children, ...props } ) => {
+                                                    const match = /language-(\w+)/.exec( className || '' );
+                                                    return !inline && match ? (
+                                                        <pre className="overflow-x-auto my-2 rounded-md bg-gray-800 p-2">
+                                                            <code className="text-sm text-white block" {...props}>
+                                                                {children}
+                                                            </code>
+                                                        </pre>
+                                                    ) : (
+                                                        <code className="rounded-md bg-gray-100 px-1 py-0.5 text-blue-700 font-mono text-sm" {...props}>
+                                                            {children}
+                                                        </code>
+                                                    );
+                                                },
+                                                blockquote: ( props ) => (
+                                                    <blockquote className="border-l-4 border-gray-200 pl-4 my-4 italic text-gray-600" {...props} />
+                                                )
+                                            }}
+                                        >
+                                            {message.content}
+                                        </ReactMarkdown>
                                     </div>
+                                    {/* User Avatar */}
                                     {message.role === 'user' && (
                                         <div className="w-8 h-8 rounded-full bg-gradient-to-r from-gray-400 to-gray-500 flex items-center justify-center text-white ml-2 flex-shrink-0 shadow-sm">
                                             <svg className="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -116,7 +171,7 @@ const AIAgent = () => {
                                         </div>
                                     )}
                                 </div>
-                            ))}
+                            ) )}
                             <div ref={messagesEndRef}></div>
                             {isLoading && (
                                 <div className="flex items-center animate-fadeIn">
@@ -135,23 +190,23 @@ const AIAgent = () => {
                         </div>
                     )}
                 </div>
-                
+
                 {/* Input area */}
                 <div className="border-t border-gray-100 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60">
                     <form onSubmit={handleSubmit} className="flex gap-2 p-4 sm:p-4 max-w-4xl mx-auto">
                         <div className="relative flex-grow">
                             <textarea
                                 value={input}
-                                onChange={(e) => setInput(e.target.value)}
+                                onChange={( e ) => setInput( e.target.value )}
                                 placeholder="Type your message..."
                                 className="w-full resize-none rounded-2xl pl-4 pr-12 py-3 bg-gray-50 focus:bg-white border border-gray-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all duration-200 text-sm sm:text-base text-gray-800 shadow-sm"
                                 rows={1}
                                 style={{ minHeight: '44px', maxHeight: '120px' }}
-                                onKeyDown={(e) => {
-                                    if (e.key === 'Enter' && !e.shiftKey) {
-                                        if (input.trim()) {
+                                onKeyDown={( e ) => {
+                                    if ( e.key === 'Enter' && !e.shiftKey ) {
+                                        if ( input.trim() ) {
                                             e.preventDefault();
-                                            handleSubmit(e);
+                                            handleSubmit( e );
                                         }
                                     }
                                 }}
